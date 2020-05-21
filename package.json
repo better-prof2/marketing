@@ -1,0 +1,22 @@
+{
+  "name": "marketing",
+  "version": "1.0.0",
+  "description": "Better Professor Marketing Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/better-prof2/marketing.git"
+  },
+  "author": "Bruno Paula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/better-prof2/marketing/issues"
+  },
+  "homepage": "https://github.com/better-prof2/marketing#readme",
+  "devDependencies": {
+    "less": "^3.11.1"
+  }
+}
