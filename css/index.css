@@ -319,3 +319,46 @@ body {
   padding-top: 0.5rem;
   color: #2196F3;
 }
+footer {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer h6 {
+  padding-bottom: 1.5rem;
+  color: #2196F3;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  padding: 0.2rem 0;
+}
+footer a {
+  text-decoration: none;
+  color: #0A2738;
+}
+.footer-social-icons {
+  flex-direction: column;
+}
+.footer-social-icons .social-icons {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.useful-links {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.download-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.download-help img {
+  padding-top: 1rem;
+}
