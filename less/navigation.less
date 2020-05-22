@@ -1,20 +1,26 @@
 
 .hero{
-    width: 100vw;
-    // height: 80vh;
+ 
     position: relative;
     background: url('../src/images/icons/large.svg')no-repeat;
-    // background-size: cover;
- 
+     background-size: cortain;
+      overflow: hidden;
+    //  background-color: yellowgreen;
+     @media (max-width: 500px){
+     
+
+     }
    
 }
 
 
 
 .hero-wrapper{
-   width: 80%;
+     width: 100vw;
+     height: 100vh;
    margin: 0 auto;
-   height: 100vh;
+   
+   
    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem,1fr));
@@ -93,6 +99,7 @@
   
   .cta-area { 
       grid-area: cta-area;
+      
       
      }
   

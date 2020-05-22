@@ -41,14 +41,15 @@ body {
   max-width: 1200px;
 }
 .hero {
-  width: 100vw;
   position: relative;
   background: url('../src/images/icons/large.svg') no-repeat;
+  background-size: cortain;
+  overflow: hidden;
 }
 .hero-wrapper {
-  width: 80%;
-  margin: 0 auto;
+  width: 100vw;
   height: 100vh;
+  margin: 0 auto;
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -264,8 +265,8 @@ body {
   padding-top: 80px;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 79px;
+  font-size: 50px;
+  line-height: 50px;
   color: #FFFFFF;
 }
 @media (max-width: 1280px) {
@@ -276,7 +277,7 @@ body {
 }
 .cta-area p {
   padding-top: 1rem;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 32px;
   color: #0A2738;
   margin-right: 4rem;
@@ -289,12 +290,14 @@ body {
 }
 .download-logos {
   padding-top: 2rem;
+  display: flex;
 }
 .download-logos img {
   padding: 0 2rem;
 }
 @media (max-width: 1000px) {
   .download-logos img {
+    display: none;
     width: 50%;
   }
 }
@@ -329,6 +332,7 @@ footer {
 footer h6 {
   padding-bottom: 1.5rem;
   color: #2196F3;
+  font-size: 1.2rem;
 }
 footer ul {
   list-style: none;
