@@ -159,6 +159,106 @@ color: @secondary-color;
       padding-top: .5rem;
       font-size: 1.5rem;
       color: @primary-color;
+      
     }
+  }
+}
+
+// section two
+
+.section-two{
+  .flex-center(start,flex-start);
+  padding-top: 10rem;
+  @media (max-width: 500px){
+    flex-direction: column;
+   padding: 0 1rem;
+  }
+
+}
+
+.section-two-left {
+  .flex-center(center,center);
+  flex-direction: column;
+
+  .section-two-title{
+    
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 4rem;
+    color:@primary-color;
+    margin-bottom: 2rem;
+      }
+      p{
+       
+    font-weight: 200;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: @secondary-color;
+    padding: 1.5rem;
+    text-align: center;
+      }
+    
+      button{
+        background: #2196F3;
+    border-radius: 10px;
+    width: 200px;
+    height: 47px;
+    color: white;
+    font-family: Roboto Slab;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    
+    align-items: center;
+    text-align: center;
+    
+      }
+}
+
+.section-two-right{
+
+  flex-direction: column;
+  
+}
+
+// Sectoon Three
+
+
+.section-three{
+  margin-top: 7rem;
+  background-color: @primary-color;
+  padding: 4rem 0;
+  
+}
+.section-three-title{
+  text-align: center;
+  color:white;
+  
+  font-size: 1.8rem;
+  padding-bottom: 4rem
+}
+.section-three-icons {
+  .flex-center(space-evenly,center);
+  @media (max-width: 500px){
+    flex-direction: column;
+}
+  
+  
+}
+.section-three-icon{
+  .flex-center(center,center);
+  flex-direction: column;
+  text-align: center;
+ 
+  padding: 2rem 2rem;
+  color: white;
+  font-size: 1.1rem;
+  
+
+
+  h5{
+    padding: 1rem 0;
+  font-size: 1.6rem;
+  color:white;
+  font-weight: bold;
   }
 }
