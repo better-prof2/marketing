@@ -1,0 +1,164 @@
+
+.hero{
+    width: 100vw;
+    // height: 80vh;
+    position: relative;
+    background: url('../src/images/icons/large.svg')no-repeat;
+    // background-size: cover;
+ 
+   
+}
+
+
+
+.hero-wrapper{
+   width: 80%;
+   margin: 0 auto;
+   height: 100vh;
+   max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem,1fr));
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "logo-area navigation" "cta-area app-mockup" "stats-number stats-number";
+    @media (max-width: 500px){
+      width: 90%;
+        
+        display: grid;
+       grid-template-columns: 100%;
+       grid-template-rows: 0.5fr 2fr 0.5fr;
+       
+       grid-template-areas: 
+       "logo-area"
+       "navigation" 
+       "cta-area"
+       "app-mockup"
+       "stats-number";
+  }
+}
+  
+  .logo-area { 
+      grid-area: logo-area; 
+     
+      .flex-center(flex-start,center);
+      a {
+          cursor: pointer;
+      }
+      img{
+        @media (max-width: 1280px){
+          width: 350px ;
+          line-height: 50px;
+      }
+      }
+      
+    }
+  
+  .navigation {
+       grid-area: navigation; 
+       
+       .flex-center(center,center);
+
+       a {
+            padding: .4rem 2rem;
+            text-decoration: none;
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            color: @menu-color;
+            letter-spacing: .1rem;
+            @media (max-width: 1002px){
+              font-size: 1rem;
+              padding: 0 1rem;
+              color:red;
+          }
+          @media (max-width: 830px){
+            font-size: .8rem;
+            padding: 0 1rem;
+            color:yellow;
+        }
+       }
+       
+       
+    }
+    .signup{
+        display: block;
+       
+        border: .5px solid white;
+       
+        
+        
+    }
+  
+  .cta-area { 
+      grid-area: cta-area;
+      
+     }
+  
+  .app-mockup {
+       grid-area: app-mockup; 
+       .flex-center(flex-end, center)
+    }
+  
+  .stats-number { 
+      grid-area: stats-number; 
+     
+    }
+
+// Section One
+
+.section-one {
+  padding-top: 10rem;
+  
+  text-align: center;
+  
+ 
+  h2{
+    font-weight: bold;
+font-size: 40px;
+color: @secondary-color;
+  }
+  p{
+    padding-top: 2rem;
+    color:@secondary-color;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+  }
+  button {
+    font-family: Roboto Slab;
+    
+    width: 200px;
+    height: 47px;
+    background-color: transparent;
+    border:  .1rem solid @primary-color;
+    font-size: 1.8rem;
+
+    color: @primary-color;
+    border-radius: 1rem;
+    margin-top: 7rem;
+
+  }
+}
+
+.card-container {
+  .flex-center(space-evenly, center);
+  padding-top: 7rem;
+  flex-wrap: wrap;
+
+  .card{
+    margin-top: 2rem;
+    width: 22rem;
+    height: 17rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 2rem 4rem;
+    h5{
+      padding-top: .5rem;
+      font-size: 1.5rem;
+      color: @primary-color;
+    }
+  }
+}
