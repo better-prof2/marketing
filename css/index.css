@@ -36,9 +36,72 @@ body {
   font-size: 62.5%;
 }
 .container {
-  width: 90wv;
+  width: 90vw;
   margin: 0 auto;
   max-width: 1200px;
+}
+.about-grid-container {
+  height: 100%;
+  margin: 0;
+}
+.about-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "logo logo navigation navigation" "meet meet tl-info tl-image" "backend ui front sr-front" "backend-info ui-info front-info sr-front-info" "footer footer footer footer";
+}
+.logo {
+  grid-area: logo;
+}
+.backend {
+  grid-area: backend;
+}
+.ui {
+  grid-area: ui;
+}
+.meet {
+  grid-area: meet;
+}
+.tl-info {
+  grid-area: tl-info;
+}
+.tl-image {
+  grid-area: tl-image;
+}
+.navigation {
+  grid-area: navigation;
+}
+.front {
+  grid-area: front;
+}
+.sr-front {
+  grid-area: sr-front;
+}
+.backend-info {
+  grid-area: backend-info;
+}
+.ui-info {
+  grid-area: ui-info;
+}
+.front-info {
+  grid-area: front-info;
+}
+.sr-front-info {
+  grid-area: sr-front-info;
+}
+.footer {
+  grid-area: footer;
+}
+/* For presentation only, no need to copy the code below */
+.about-grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+.about-grid-container *:after {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .hero {
   position: relative;
@@ -314,13 +377,19 @@ body {
 }
 .stats-number h4 {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 79px;
   color: #0A2738;
 }
 .stats-number p {
   padding-top: 0.5rem;
   color: #2196F3;
+}
+.meet {
+  background-color: #2196F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer {
   padding: 5rem;
