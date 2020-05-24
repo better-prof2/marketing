@@ -44,6 +44,13 @@ a {
   max-width: 1200px;
 }
 @media (max-width: 500px) {
+  .container {
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 85vw;
+  }
+}
+@media (max-width: 500px) {
   .mobile-hide {
     display: none;
   }
@@ -113,15 +120,17 @@ a {
 }
 .hero {
   background: url('/src/images/icons/large.svg') no-repeat;
-  height: 90vh;
-  width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-color: yellow;
   background-size: cover;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hero {
-    background: url(../src/images/icons/mobile-bg.svg) no-repeat;
+    background: url('/src/images/icons/mobile-bg.svg') no-repeat;
     height: 100vh;
     width: 100%;
+    background-position: top;
     background-size: contain;
   }
 }
@@ -145,6 +154,7 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    padding-top: 2rem;
     flex-wrap: nowrap;
   }
 }
@@ -180,7 +190,7 @@ nav .signup {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 7rem;
+  padding-top: 4rem;
 }
 @media (max-width: 500px) {
   .test {
@@ -249,6 +259,11 @@ nav .signup {
     display: none;
   }
 }
+@media (max-width: 1140px) {
+  .download-logos {
+    display: none;
+  }
+}
 .app-mockup {
   display: flex;
 }
@@ -258,13 +273,11 @@ nav .signup {
 }
 @media (max-width: 500px) {
   .app-mockup img {
-    border: solid  red;
     display: none;
   }
 }
 @media (max-width: 850px) and (min-width: 501px) {
   .app-mockup img {
-    border: solid  hotpink;
     width: 90%;
     height: auto;
   }
@@ -273,7 +286,7 @@ nav .signup {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .stats-number h4 {
   font-size: 2.5rem;
@@ -281,13 +294,17 @@ nav .signup {
   padding: 1rem 0;
 }
 .stats-number p {
-  color: gray;
+  color: #2196F3;
 }
 @media (max-width: 500px) {
   .stats-number {
     display: flex;
     justify-self: flex-start;
   }
+}
+.stats-number img {
+  width: 50%;
+  height: auto;
 }
 .stats-wrapper {
   display: flex;
@@ -306,13 +323,12 @@ nav .signup {
   }
 }
 .section-one {
-  margin-top: 10rem;
-  max-height: 100%;
+  padding-top: 13rem;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .section-one {
-    margin-top: 3rem;
+    padding-top: 20rem;
   }
 }
 .section-one h2 {
