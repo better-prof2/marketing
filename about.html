@@ -21,8 +21,16 @@
                         <a href="/login">Login</a>
                         <a href="/signup" class="signup-about">Sign Up</a>
                     </div>
-                    <div class="burger-menu"><img src="./src/images/blue-menu.png" alt="blue-menu"></div>
-                
+                 <div class="burger-menu"  onclick="onClickMenu()"id="menu"><img src="./src/images/blue-menu.png" alt="blue-menu"></div>
+                 <div id="menu-bar">
+                  
+                    <ul class="nav" id="nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        
+                    </ul>
+                </div>   
+                <div class="menu-bg" id="menu-bg"></div>
             </header>
           
         </div> <!-- Container -->
@@ -138,5 +146,7 @@
 </div>
 </div> <!-- Container -->
 
+<!-- <div class="menu-bg" id="menu-bg"></div> -->
+<script src="./script.js"></script>
 </body>
 </html>
