@@ -108,14 +108,14 @@ a {
 }
 .hero {
   background: url('/src/images/icons/large.svg') no-repeat;
-  height: 100vh;
-  background-position: top;
+  height: 90vh;
+  background-position: center;
   background-size: cover;
 }
 @media (max-width: 600px) {
   .hero {
     background: url('/src/images/icons/mobile-bg.svg') no-repeat;
-    height: 100vh;
+    height: 10%;
     width: 100%;
     background-position: top;
     background-size: contain;
@@ -324,7 +324,7 @@ nav .signup {
 }
 @media (max-width: 600px) {
   .section-one {
-    padding-top: 20rem;
+    padding-top: 2rem;
   }
 }
 .section-one h2 {
