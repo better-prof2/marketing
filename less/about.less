@@ -1,113 +1,114 @@
-   
-//************************************************
-//        About Us
-//************************************************
+// *********************************************** 
+//                  About Page
+// *********************************************** 
 
-
-.about-page{
+.about-page {
     .flex-center(space-between, center);
-   padding-bottom: 1rem;
-   
-//    flex-wrap: wrap;
+    padding-bottom: 1rem;
 
-@media(max-width: 511px){
-    .flex-center(space-between, center);
-    
-  
-}
-   @media(min-width: 512px) and (max-width: 1079px){
+    @media(max-width: 511px) {
+        .flex-center(space-between, center);
+    }
+
+   @media(min-width: 512px) and (max-width: 1079px) {
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       
-       
-   }
-  
-   
-}
-.about-nav{
-        .flex-center(flex-end, center);
-        
-   
-        a{
-            display: inline-block;
-             padding: 1rem 1rem;
-             font-size: 1.2rem;
-             color: @primary-color;
-           }
-           .signup-about{
-            border: .1rem solid @primary-color;
-            padding: .4rem .9rem;
-          }
-
-          @media(max-width: 511px){
-              display: none;
-          }
-   
-}
-    .logo{
-        // width:auto;
-        max-width: 100%;
     }
+}
+
+.about-nav {
+    .flex-center(flex-end, center);
         
-        .meet-wrapper{
-            .flex-center(space-between,center);
-            flex-wrap: wrap;
-            padding: 1rem 0;
+    a{
+        display: inline-block;
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+        color: @primary-color;
+    }
+    
+    .signup-about{
+        border: .1rem solid @primary-color;
+        padding: .4rem .9rem;
+    }
+
+    @media(max-width: 511px){
+        display: none;
+    }
+}
+
+.logo{
+    max-width: 100%;
+    
+    @media(max-width:500px){
+        width: 90%;
+    }
+}
+
+// *********************************************** 
+//                  Section
+// *********************************************** 
+        
+.meet-wrapper{
+    .flex-center(space-between,center);
+    flex-wrap: wrap;
+    padding: 1rem 0;
             
-            @media(max-width: 719px){
-                flex-direction: column;
-            }
-        }  
+    @media(max-width: 719px){
+        flex-direction: column;
+    }
+}  
 
 
 
 .meet {
-  
     background: linear-gradient(218.22deg, #1976D2 -14.09%, #215CF3 -14.08%, rgba(33, 150, 243, 0.56) 119.48%);
 
-   h1{
-   
-    font-size:2.2rem;
-    color: white;
-     border-bottom: solid @secondary-color;
-     @media(max-width: 719px){
-       margin-bottom: 1rem;
+    h1{
+        font-size:2.2rem;
+        color: white;
+        border-bottom: solid @secondary-color;
+     
+        @media(max-width: 719px) {
+            margin-bottom: 1rem;
+        }
     }
-    }
-  .tl-info {
-    
+  
+    .tl-info {
+        
         h3{
             padding: .2rem 0;
         }
+        
         h6{ 
             padding-bottom: 1rem;
             font-size: 1rem;
             color: @secondary-color;
         }
        
-  }
+    }
+}
 
-}
-.tl{
+.tl {
   .flex-center(center,center);
-  @media(max-width: 511px){
-    
-    flex-direction: column-reverse;
-   
-    
- }
+  
+    @media(max-width: 511px){
+        flex-direction: column-reverse;
+    }
 }
-.tl-info{
+
+.tl-info {
+    
     h3{
         font-size: 1.2rem;
         color: white;
         padding: 1rem 0;
     }
+
     @media(max-width: 511px){
         .flex-center(center,center);
         flex-direction:column;
-     }
+    }
 }
 
 .devs {
@@ -115,8 +116,8 @@
     .flex-center(space-between, center);
     flex-wrap: wrap;
     padding: 2rem 0;
+    
     @media(max-width: 500px){
-       
         flex-direction: column;
     }
 }
@@ -124,45 +125,30 @@
 
 .profile-image {
     .flex-center(center,center);
+    
     @media(max-width: 500px){
-       padding: 1rem 0;
+        padding: 1rem 0;
     }
 }
+
 .info {
-    
     flex-direction: column;
     .flex-center(center,center);
    
-    h3{
+    h3 {
         padding: .2rem 0;
         font-size: 1.2rem;
         color: @secondary-color;
     }
-    h6{
+
+    h6 {
         color: @primary-color;
         font-size: .8rem;
-        padding-bottom: 1rem;
-            
-        
+        padding-bottom: 1rem; 
     }
 }
 
 
 
 
-// mobile 
 
-
-
-// @media(max-width:1079px){
-//     .logo {
-//         background-color: greenyellow;
-// width: auto;
-//     }
-// }
-@media(max-width:500px){
-    .logo {
-        
-width: 90%;
-    }
-}
