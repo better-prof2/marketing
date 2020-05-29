@@ -1,0 +1,141 @@
+.review-container {
+  padding-top: 3rem;
+}
+.hero-review {
+  background-image: url(../src/images/review-bg.png);
+  background-color: blue;
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-heading {
+  padding-top: 5rem;
+  .flex-center(center,center);
+  color: white;
+}
+
+.review-card-container {
+ 
+  .flex-center(space-evenly,center);
+  flex-wrap: wrap;
+  
+  h2 {
+    text-align: center;
+    padding-top: 0.5rem;
+    color: @primary-color;
+  }
+
+  p {
+    text-align: center;
+    padding: 0.5rem ;
+  }
+}
+
+.review-card {
+  margin: 1rem;
+  width: 20rem;
+  height: auto;
+  
+  .material-shadow();
+}
+
+.card-stars {
+  .flex-center(space-between, center);
+  padding: 1rem;
+}
+
+.card-bottom {
+  background-color: #2196f3;
+  width: 100%;
+  height: auto;
+  padding: .5rem;
+  .flex-center("",center);
+  
+}
+
+.class-avatar {
+  height: 70px;
+ }
+
+ .card-avatar-info {
+   padding: 0 1rem;
+   
+   h3 {
+    color: white;
+    font-size: 1.8rem;
+   }
+
+   p {
+     font-size: .8rem;
+     color: @secondary-color;
+   }
+ }
+
+ .review {
+   padding-top: 3rem;
+   
+ }
+
+ .faq {
+   background-color: @primary-color;
+   width: 100%;
+   padding: 3rem 0;
+
+   h3 {
+     text-align: center;
+     
+     color: white;
+     font-size: 1.8rem;
+   }
+   p {
+      color: @secondary-color;
+      font-size: 1rem;
+      text-align: center;
+      padding: 2rem 0;
+   }
+ }
+
+ .faq-center {
+  
+  .flex-center(space-between, center);
+  
+  @media(max-width: 500px){
+    flex-direction: column;
+  }
+ }
+
+ .faq-left {
+  
+  padding: 1rem 2rem;
+  h5 {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+  
+  }
+  p{
+    color: white;
+    font-size: .8rem;
+  }
+
+ }
+
+
+
+ .faq-right {
+ 
+  padding: 1rem 2rem;
+  
+  
+  h5 {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+  }
+  p{
+    color: white;
+    font-size: .8rem;
+  }
+ }
