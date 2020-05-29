@@ -79,6 +79,7 @@ a {
 .nav li a:hover {
   font-weight: bold;
   color: #0A2738;
+  border-bottom: solid white;
 }
 .menu-bg,
 #menu-bar {
@@ -91,7 +92,7 @@ a {
   width: 0;
   height: 5px;
   margin: 30px 0 20px 20px;
-  background: #0A2738;
+  background: #2196F3;
   border-radius: 50%;
   transition: 0.3s ease;
 }
@@ -102,37 +103,32 @@ a {
   width: 300px;
   height: 100%;
   transform: translate(-65%, -50%);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .change {
   display: block;
 }
 .hero {
-  background: url('/src/images/icons/large.svg') no-repeat;
+  background: url("/src/images/icons/large.svg") no-repeat;
   height: 90vh;
   background-position: center;
   background-size: cover;
 }
 @media (max-width: 600px) {
   .hero {
-    background: url('/src/images/icons/mobile-bg.svg') no-repeat;
+    background: url("/src/images/icons/mobile-bg.svg") no-repeat;
     height: 10%;
     width: 100%;
     background-position: top;
     background-size: contain;
   }
 }
-@media (max-width: 500px) {
-  .logo-area img {
-    width: 100%;
-    height: auto;
-  }
-}
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 3rem;
+  display: flex;
+  justify-content: "space-between";
+  align-items: "center";
 }
 @media (max-width: 1139px) {
   header {
@@ -153,11 +149,22 @@ header .burger-menu {
     display: block;
   }
 }
+@media (max-width: 500px) {
+  .logo-area img {
+    width: 100%;
+    height: auto;
+  }
+}
 nav a {
   display: inline-block;
   padding: 1rem 1rem;
   font-size: 1.2rem;
   color: white;
+  transition-duration: 0.6s;
+}
+nav a:hover {
+  color: #0A2738;
+  border-bottom: solid white;
 }
 nav .signup {
   border: 0.1rem solid white;
@@ -309,6 +316,11 @@ nav .signup {
     display: none;
   }
 }
+@media (max-width: 500px) {
+  .list-page {
+    display: block;
+  }
+}
 .cus-nav {
   position: fixed;
   height: 10px;
@@ -317,6 +329,15 @@ nav .signup {
 }
 .cus-nav .logo {
   display: none;
+}
+.btn-cta {
+  transition-duration: 0.6s;
+}
+.btn-cta:hover {
+  color: #0A2738;
+  background-color: #2196F3;
+  color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .section-one {
   padding-top: 13rem;
@@ -361,10 +382,14 @@ nav .signup {
   margin-top: 2rem;
   width: 22rem;
   height: 17rem;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   padding: 2rem 4rem;
+  transition: 0.6s;
+}
+.card-container .card:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .card-container .card h5 {
   padding-top: 0.5rem;
@@ -411,7 +436,7 @@ nav .signup {
   text-align: center;
 }
 .section-two-left button {
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 10px;
   width: 200px;
   height: 47px;
@@ -421,6 +446,19 @@ nav .signup {
   font-size: 1.3rem;
   align-items: center;
   text-align: center;
+  transition-duration: 0.6s;
+}
+.section-two-left button:hover {
+  background-color: white;
+  border: solid #2196F3;
+  color: #2196F3;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.section-two-left a {
+  color: white;
+}
+.section-two-left a:hover {
+  color: #2196F3;
 }
 .section-two-right {
   flex-direction: column;
@@ -489,16 +527,16 @@ nav .signup {
     align-items: center;
   }
 }
-.about-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 .about-nav a {
   display: inline-block;
   padding: 1rem 1rem;
   font-size: 1.2rem;
   color: #2196F3;
+  transition-duration: 0.6s;
+}
+.about-nav a:hover {
+  color: #0A2738;
+  border-bottom: solid #2196F3;
 }
 .about-nav .signup-about {
   border: 0.1rem solid #2196F3;
@@ -530,7 +568,7 @@ nav .signup {
   }
 }
 .meet {
-  background: linear-gradient(218.22deg, #1976D2 -14.09%, #215CF3 -14.08%, rgba(33, 150, 243, 0.56) 119.48%);
+  background: linear-gradient(218.22deg, #1976d2 -14.09%, #215cf3 -14.08%, rgba(33, 150, 243, 0.56) 119.48%);
 }
 .meet h1 {
   font-size: 2.2rem;
@@ -632,6 +670,11 @@ footer li {
 footer a {
   text-decoration: none;
   color: #0A2738;
+}
+footer a:hover {
+  background-color: white;
+  color: #2196F3;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .footer-social-icons {
   flex-direction: column;
