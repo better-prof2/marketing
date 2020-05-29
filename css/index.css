@@ -698,3 +698,52 @@ footer a:hover {
 .download-help img {
   padding-top: 1rem;
 }
+.hero-review {
+  background-image: url(../src/images/review-bg.png);
+  background-color: blue;
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+.hero-heading {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.review-card-container {
+  width: 20rem;
+  height: auto;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.review-card-container h2 {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.review-card-container p {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.card-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.card-bottom {
+  background-color: #2196f3;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: "";
+  align-items: center;
+}
+.card-bottom img {
+  height: 107px;
+}
+.class-avatar {
+  display: inline-block;
+  height: 10rem;
+}
